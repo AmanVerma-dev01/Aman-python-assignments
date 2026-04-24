@@ -1,23 +1,23 @@
 class Stack:
-def __init__(self):
-self.stack = []
+  def __init__(self):
+    self.stack = []
 
 # Push element into stack
-def push(self, item):
-self.stack.append(item)
-print(f"{item} pushed into stack")
+  def push(self, item):
+    self.stack.append(item)
+    print(f"{item} pushed into stack")
 
 # Safe pop method
-def safe_pop(self):
-if len(self.stack) == 0:
-print("Stack is empty, nothing to pop.")
-return None
-else:
-return self.stack.pop()
+  def safe_pop(self):
+    if len(self.stack) == 0:
+      print("Stack is empty, nothing to pop.")
+      return None
+    else:
+      return self.stack.pop()
 
 # Display stack
-def display(self):
-print("Stack:", self.stack)
+  def display(self):
+    print("Stack:", self.stack)
 
 # Driver code
 s = Stack()
